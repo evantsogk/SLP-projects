@@ -1,0 +1,21 @@
+- Τρέχουμε το script create_files.py που δημιουργεί όλους του φακέλους και τα αρχεία που αντιστοιχούν στο βήμα 3.4.
+
+- Αντιγράφουμε και τροποποιούμε manually τα αρχεία path.sh, cmd.sh και το conf/mfcc.conf.
+
+- Τρέχουμε το script create_softlinks.py που δημιουργεί τα softlinks και τους φακέλους του βήματος 4.1.
+
+- Τρέχουμε το script create_dict_files.py που δημιουργεί τα αρχεία του βήματος 4.2.1 στον φάκελο data/local/dict.
+
+- Αντιγράφουμε το αρχείο timit_format_data.sh και διαγράφουμε την τελευταία του γραμμή.
+  
+- Τρέχουμε το script create_language_models.sh που πραγματοποιεί τα υπόλοιπα υποβήματα του 4.2 (γλωσσικά μοντέλα, FST...)
+
+- Τρέχουμε το script extract_mfccs.sh που αντιστοιχεί στο βήμα 4.3.
+
+- Μετονομάζουμε manually το αρχείο local/score_kaldi.sh σε score.sh.
+
+- Τρέχουμε το script train_and_decode.sh που αντιστοιχεί στο βήμα 4.4.
+
+
+Bonus:
+- Τρέχουμε το script run_dnn.sh και βλέπουμε το wer στο αρχείο exp/tri/decode_test_dnn/scoring_kaldi/best_wer
